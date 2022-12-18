@@ -169,6 +169,12 @@ export const monarchs = [
         family: "Stuart"
     },
     {
+        name: "Oliver Cromwell",
+        start: "March 27, 1625",
+        end: "Interregnum",
+        family: "Interregnum"
+    },
+    {
         name: "Charles II",
         start: "May 29, 1660",
         end: "February 6, 1685",
