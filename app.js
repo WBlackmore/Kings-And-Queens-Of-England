@@ -1,6 +1,16 @@
-/* const button = document.querySelector("button"); */
+const button = document.querySelector(".submit"); 
+const day = document.querySelector(".day"); 
+const month = document.querySelector(".month"); 
+const year = document.querySelector(".year"); 
 
+function alertDate(){
+    let dayVal = day.value;
+    let monthVal = month.value;
+    let yearVal = year.value;
+    alert(`"${monthVal} ${dayVal}, ${yearVal}"`);
+ }
 
+ button.addEventListener('click', alertDate)
 
 /*Function to convert any date (day/month/year) into a number. Accepts a 
   date string in the format "month day, year". Exmaple: "December 25, 1066"*/
@@ -48,6 +58,10 @@ function checkDate(date, obj){
         }
     }
     return currentMonarchs;
+}
+
+function inputToDate(day, month, year){
+   return `"${month} ${day}, ${year}"`;
 }
 
 const test = yearToNumber("August 22, 1485")
