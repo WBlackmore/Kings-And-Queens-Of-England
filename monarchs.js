@@ -186,5 +186,90 @@ export const monarchs = [
         end: "December 23, 1688",
         family: "Stuart"
     },
+    {
+        name: "William III",
+        start: "December 24, 1688",
+        end: "March 8, 1702",
+        family: "Orange"
+    },
+    {
+        name: "Anne I",
+        start: "March 8, 1702",
+        end: "May 1, 1707",
+        family: "Orange"
+    },
+    {
+        name: "Mary II",
+        start: "December 24, 1688",
+        end: "December 28, 1694",
+        family: "Stuart"
+    },
+    {
+        name: "George I",
+        start: "August 1, 1714",
+        end: "June 11, 1727",
+        family: "Hanover"
+    },
+    {
+        name: "George II",
+        start: "June 12, 1727",
+        end: "October 25, 1760",
+        family: "Hanover"
+    },
+    {
+        name: "George III",
+        start: "October 26, 1760",
+        end: "January 29, 1820",
+        family: "Hanover"
+    },
+    {
+        name: "George IV",
+        start: "January 30, 1820",
+        end: "June 26, 1830",
+        family: "Hanover"
+    },
+    {
+        name: "William IV",
+        start: "June 27, 1830",
+        end: "June 20, 1837",
+        family: "Hanover"
+    },
+    {
+        name: "Victoria",
+        start: "June 21, 1837",
+        end: "January 22, 1901",
+        family: "Hanover"
+    },
+    {
+        name: "Edward VII",
+        start: "January 23, 1901",
+        end: "May 6, 1910",
+        family: "Saxe-Coburg"
+    },
+    { name: "George V",
+        start: "May 7, 1910",
+        end: "January 20, 1936",
+        family: "Windsor"
+    },
+    { name: "Edward VIII",
+    start: "January 21, 1936",
+    end: "December 11, 1936",
+    family: "Windsor"
+    },
+    { name: "George VI",
+        start: "December 12, 1936",
+        end: "February 6, 1952",
+        family: "Windsor"
+    },
+    { name: "Elizabeth II",
+    start: "February 7, 1952",
+    end: "September 8, 2022",
+    family: "Windsor"
+},
+{ name: "Charles III",
+start: "September 9, 2022",
+end: "January 1, 2023",
+family: "Windsor"
+}
 ]
 

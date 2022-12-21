@@ -7,7 +7,9 @@ function alertDate(){
     let dayVal = day.value;
     let monthVal = month.value;
     let yearVal = year.value;
-    alert(`"${monthVal} ${dayVal}, ${yearVal}"`);
+
+    let yearNum = yearToNumber(`"${monthVal} ${dayVal}, ${yearVal}"`)
+    alert(yearNum);
  }
 
  button.addEventListener('click', alertDate)
