@@ -1,5 +1,5 @@
 /* Array to hold objects of each monarch */
-export const monarchs = [
+ const monarchs = [
     {
         name: "William I",
         start: "December 25, 1066",
@@ -111,7 +111,7 @@ export const monarchs = [
     {
         name: "Edward V",
         start: "April 9, 1483",
-        end: "June 25, 1983",
+        end: "June 25, 1483",
         family: "Plantagenet"
     },
     {
@@ -273,3 +273,37 @@ family: "Windsor"
 }
 ]
 
+
+function yearToNumber(date){
+    let newYear = new Date(`"${date}"`)
+    let num = newYear.getTime();
+    return num;
+}
+
+function checkDate(date, obj){
+    const currentMonarchs = [];
+
+    for(let i = 0; i < obj.length; i++){
+
+        let startNum = obj[i].start;
+        let endNum = obj[i].end;
+        let givenDate = yearToNumber(date)
+        let start = yearToNumber(startNum)
+        let end = yearToNumber(endNum)
+        
+        if(givenDate >= start && givenDate <= end){
+            currentMonarchs.push(obj[i]);
+        }
+    }
+    if(currentMonarchs.length === 1){
+    console.log(`The Monarch on this date was ${currentMonarchs[0].name}`)
+    }
+    else if (currentMonarchs.length === 2){
+        console.log(`The Monarchs on this date were ${currentMonarchs[0].name} and ${currentMonarchs[1].name}`)
+    }
+    return currentMonarchs;
+}
+
+const firstDate = "December 25, 1066"
+
+console.log(checkDate("March 8, 1702", monarchs))
