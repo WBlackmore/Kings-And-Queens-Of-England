@@ -1,7 +1,7 @@
 const button = document.querySelector(".submit"); 
-const day = document.querySelector(".day"); 
-const month = document.querySelector(".month"); 
-const year = document.querySelector(".year"); 
+const day = document.querySelector("#day"); 
+const month = document.querySelector("#month"); 
+const year = document.querySelector("#year"); 
 
 function alertDate(){
     let dayVal = day.value;

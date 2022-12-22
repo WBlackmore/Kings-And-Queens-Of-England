@@ -1,3 +1,9 @@
+const button = document.querySelector(".submit"); 
+const day = document.querySelector("#day"); 
+const month = document.querySelector("#month"); 
+const year = document.querySelector("#year"); 
+
+
 /* Array to hold objects of each monarch */
  const monarchs = [
     {
@@ -171,7 +177,7 @@
     {
         name: "Oliver Cromwell",
         start: "March 27, 1625",
-        end: "Interregnum",
+        end: "May 29, 1660",
         family: "Interregnum"
     },
     {
@@ -296,14 +302,24 @@ function checkDate(date, obj){
         }
     }
     if(currentMonarchs.length === 1){
-    console.log(`The Monarch on this date was ${currentMonarchs[0].name}`)
+    return `The Monarch on this date was ${currentMonarchs[0].name}`
     }
     else if (currentMonarchs.length === 2){
-        console.log(`The Monarchs on this date were ${currentMonarchs[0].name} and ${currentMonarchs[1].name}`)
+        return `The Monarchs on this date were ${currentMonarchs[0].name} and ${currentMonarchs[1].name}`
     }
-    return currentMonarchs;
+
 }
 
 const firstDate = "December 25, 1066"
 
 console.log(checkDate("March 8, 1702", monarchs))
+
+button.addEventListener('click', () => {
+    console.log("CLicked!")
+    let dayVal = day.value;
+    let monthVal = month.value;
+    let yearVal = year.value;
+    console.log(dayVal, monthVal, yearVal)
+    const result = checkDate(`${monthVal} ${dayVal}, ${yearVal}"`, monarchs)
+    alert(result)
+})
