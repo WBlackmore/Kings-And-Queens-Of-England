@@ -20,7 +20,7 @@ const year = document.querySelector("#year");
     },
     {
         name: "Henry I",
-        start: "August 5",
+        start: "August 5, 1100",
         end: "December 1, 1135",
         family: "Norman"
     },
@@ -280,6 +280,7 @@ family: "Windsor"
 ]
 
 
+/* Converts a date (Month Day, Year) to a number in milliseconds */
 function yearToNumber(date){
     let newYear = new Date(`"${date}"`)
     let num = newYear.getTime();
@@ -310,10 +311,9 @@ function checkDate(date, obj){
 
 }
 
-const firstDate = "December 25, 1066"
 
-console.log(checkDate("March 8, 1702", monarchs))
 
+/* Event Listener on the button which takes date from the input and returns the Monarch in an alert */
 button.addEventListener('click', () => {
     console.log("CLicked!")
     let dayVal = day.value;
