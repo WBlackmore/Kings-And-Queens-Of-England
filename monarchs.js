@@ -1,8 +1,8 @@
-const button = document.querySelector(".submit"); 
+const button = document.querySelector(".output"); 
 const day = document.querySelector("#day"); 
 const month = document.querySelector("#month"); 
 const year = document.querySelector("#year"); 
-
+const output = document.querySelector('#output');
 
 /* Array to hold objects of each monarch */
  const monarchs = [
@@ -176,7 +176,7 @@ const year = document.querySelector("#year");
     },
     {
         name: "Oliver Cromwell",
-        start: "March 27, 1625",
+        start: "January 31, 1649",
         end: "May 29, 1660",
         family: "Interregnum"
     },
@@ -311,8 +311,6 @@ function checkDate(date, obj){
 
 }
 
-
-
 /* Event Listener on the button which takes date from the input and returns the Monarch in an alert */
 button.addEventListener('click', () => {
     console.log("CLicked!")
@@ -321,5 +319,6 @@ button.addEventListener('click', () => {
     let yearVal = year.value;
     console.log(dayVal, monthVal, yearVal)
     const result = checkDate(`${monthVal} ${dayVal}, ${yearVal}"`, monarchs)
-    alert(result)
+    output.innerHTML = result;
+    console.log("Done!")
 })
