@@ -1,5 +1,9 @@
+body{
+    text-align: center;
+}
+
 h1{
-    color: red;
+    color: blue;
 }
 
 input{
@@ -8,6 +12,7 @@ input{
 
 button{
     width: 30%;
+    margin: auto;
 }
 
 .container{
